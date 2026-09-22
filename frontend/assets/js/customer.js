@@ -479,3 +479,99 @@ if (settingsForm) {
     });
 
 }
+// ==================================================
+// CUSTOMER PROFILE IMAGE
+// ==================================================
+
+const customerImageUpload =
+    document.getElementById("customerImageUpload");
+
+const customerProfileImage =
+    document.getElementById("customerProfileImage");
+
+const removeCustomerImageBtn =
+    document.getElementById("removeCustomerImageBtn");
+
+// Existing/default profile image
+const defaultCustomerImage =
+    "../assets/images/profile.png";
+
+// Load saved customer profile image
+const savedCustomerImage =
+    localStorage.getItem("customerProfileImage");
+
+if (savedCustomerImage && customerProfileImage) {
+    customerProfileImage.src = savedCustomerImage;
+} else if (customerProfileImage) {
+    customerProfileImage.src = defaultCustomerImage;
+}
+
+
+// ==================================================
+// CHANGE PROFILE IMAGE
+// ==================================================
+
+if (customerImageUpload) {
+
+    customerImageUpload.addEventListener("change", function () {
+
+        const file = this.files[0];
+
+        if (!file) {
+            return;
+        }
+
+        // Check if selected file is an image
+        if (!file.type.startsWith("image/")) {
+
+            alert("Please select an image file.");
+
+            this.value = "";
+
+            return;
+        }
+
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+
+            const imageData = event.target.result;
+
+            // Display new image
+            customerProfileImage.src = imageData;
+
+            // Save image in browser
+            localStorage.setItem(
+                "customerProfileImage",
+                imageData
+            );
+
+            alert("Profile image updated successfully.");
+        };
+
+        reader.readAsDataURL(file);
+    });
+}
+
+
+// ==================================================
+// USE DEFAULT IMAGE
+// ==================================================
+
+if (removeCustomerImageBtn) {
+
+    removeCustomerImageBtn.addEventListener("click", function () {
+
+        // Remove uploaded image
+        localStorage.removeItem("customerProfileImage");
+
+        // Restore existing profile image
+        customerProfileImage.src = defaultCustomerImage;
+
+        // Clear file selection
+        customerImageUpload.value = "";
+
+        alert("Default profile image restored.");
+    });
+}
+

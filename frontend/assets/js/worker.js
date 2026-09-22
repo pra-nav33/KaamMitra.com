@@ -2438,3 +2438,75 @@ if (workerSettingsForm) {
 }
 
 });
+// ===============================
+// Worker Profile Image
+// ===============================
+
+const workerImageUpload = document.getElementById("workerImageUpload");
+const workerProfileImage = document.getElementById("workerProfileImage");
+const removeWorkerImageBtn = document.getElementById("removeWorkerImageBtn");
+
+// Your existing profile picture
+const defaultWorkerImage = "../assets/images/profile.png";
+
+// Load saved profile image
+const savedWorkerImage = localStorage.getItem("workerProfileImage");
+
+if (savedWorkerImage && workerProfileImage) {
+    workerProfileImage.src = savedWorkerImage;
+} else {
+    workerProfileImage.src = defaultWorkerImage;
+}
+
+// Upload new profile image
+if (workerImageUpload) {
+
+    workerImageUpload.addEventListener("change", function () {
+
+        const file = this.files[0];
+
+        if (!file) {
+            return;
+        }
+
+        if (!file.type.startsWith("image/")) {
+            alert("Please select an image file.");
+            this.value = "";
+            return;
+        }
+
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+
+            const imageData = event.target.result;
+
+            workerProfileImage.src = imageData;
+
+            localStorage.setItem(
+                "workerProfileImage",
+                imageData
+            );
+
+            alert("Profile image updated successfully.");
+        };
+
+        reader.readAsDataURL(file);
+    });
+}
+
+// Return to default profile image
+if (removeWorkerImageBtn) {
+
+    removeWorkerImageBtn.addEventListener("click", function () {
+
+        localStorage.removeItem("workerProfileImage");
+
+        workerProfileImage.src = defaultWorkerImage;
+
+        workerImageUpload.value = "";
+
+        alert("Default profile image restored.");
+    });
+}
+

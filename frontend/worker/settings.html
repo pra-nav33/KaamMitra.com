@@ -47,6 +47,53 @@
                 <p>Manage your account preferences and security settings.</p>
             </div>
 
+            
+            <!-- Profile Image -->
+<section class="settings-section">
+
+    <h2>Profile Image</h2>
+
+    <div class="settings-card profile-image-settings">
+
+        <div class="profile-image-preview">
+            <img 
+                id="workerProfileImage"
+                src="../assets/images/profile.png"
+                alt="Worker Profile Image"
+            >
+        </div>
+
+        <div class="profile-image-controls">
+
+            <label for="workerImageUpload" class="btn">
+                Change Profile Image
+            </label>
+
+            <input 
+                type="file"
+                id="workerImageUpload"
+                accept="image/*"
+                hidden
+            >
+
+            <p>
+                Upload a JPG, JPEG, or PNG image.
+            </p>
+
+            <button 
+                type="button" 
+                class="btn" 
+                id="removeWorkerImageBtn"
+            >
+                Remove Image
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
 
             <!-- Account Settings -->
             <section class="settings-section">

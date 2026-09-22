@@ -570,3 +570,34 @@
     color: var(--text);
     font-size: 14px;
 }
+/* Profile Image Settings */
+
+.profile-image-settings {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-image-preview img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1280A5;
+}
+
+.profile-image-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-image-controls p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+#removeWorkerImageBtn {
+    background: #777;
+}
