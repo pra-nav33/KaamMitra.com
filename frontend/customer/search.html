@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Find Workers - KaamMitra.com</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/customer.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         CUSTOMER PORTAL
+         ================================================== -->
+
+    <div class="portal-layout">
+
+
+        <!-- ==================================================
+             SIDEBAR
+             ================================================== -->
+
+        <aside class="portal-sidebar">
+
+            <div class="portal-logo">
+
+                <a href="../index.html">
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="KaamMitra"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <p class="portal-title">
+                CUSTOMER PORTAL
+            </p>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="search.html" class="active">
+                    🔍 Find Workers
+                </a>
+
+                <a href="bookings.html">
+                    📅 My Bookings
+                </a>
+
+                <a href="request-service.html">
+                    📝 Request Service
+                </a>
+
+                <a href="saved-workers.html">
+                    ⭐ Saved Workers
+                </a>
+
+                <a href="messages.html">
+                    💬 Messages
+                </a>
+
+                <a href="notifications.html">
+                    🔔 Notifications
+                </a>
+
+                <a href="payment.html">
+                    💳 Payments
+                </a>
+
+                <a href="review.html">
+                    ⭐ Reviews
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="settings.html">
+                    ⚙️ Settings
+                </a>
+
+                <a href="../index.html">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             MAIN CONTENT
+             ================================================== -->
+
+        <main class="portal-main customer-portal find-workers-page">
+
+
+            <!-- ==================================================
+                 PAGE HEADER
+                 ================================================== -->
+
+            <section class="portal-header">
+
+                <h1>
+                    Find Workers
+                </h1>
+
+                <p>
+                    Find skilled and trusted workers near you.
+                </p>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 SEARCH AREA
+                 ================================================== -->
+
+            <section class="worker-search">
+
+
+                <!-- Service Search -->
+
+                <div class="search-field">
+
+                    <label for="service">
+                        Service
+                    </label>
+
+                    <input
+                        type="text"
+                        id="service"
+                        placeholder="e.g. Plumber, Electrician"
+                    >
+
+                </div>
+
+
+
+                <!-- Location Search -->
+
+                <div class="search-field">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="e.g. Kathmandu"
+                    >
+
+                </div>
+
+
+
+                <!-- Search Button -->
+
+                <button
+                    type="button"
+                    id="searchWorkersBtn">
+
+                    Search Workers
+
+                </button>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 FILTERS
+                 ================================================== -->
+
+            <section class="worker-filters">
+
+                <h2>
+                    Filter Workers
+                </h2>
+
+
+                <!-- Service Filter -->
+
+                <select id="serviceFilter">
+
+                    <option value="all">
+                        All Services
+                    </option>
+
+                    <option value="household">
+                        Household Services
+                    </option>
+
+                    <option value="electrical">
+                        Electrical Services
+                    </option>
+
+                    <option value="plumbing">
+                        Plumbing Services
+                    </option>
+
+                    <option value="appliance">
+                        Appliance Repair
+                    </option>
+
+                    <option value="it">
+                        IT & Technical Services
+                    </option>
+
+                </select>
+
+
+
+                <!-- Rating Filter -->
+
+                <select id="ratingFilter">
+
+                    <option value="0">
+                        Any Rating
+                    </option>
+
+                    <option value="4.5">
+                        4.5+ Rating
+                    </option>
+
+                    <option value="4">
+                        4.0+ Rating
+                    </option>
+
+                </select>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 WORKER RESULTS
+                 ================================================== -->
+
+            <section class="worker-results">
+
+                <div class="workers-section-heading">
+
+                    <div>
+
+                        <h2>
+                            Available Workers
+                        </h2>
+
+                        <p>
+                            Browse verified workers available for your service.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- No Workers Message -->
+
+                <p id="noWorkers">
+
+                    No workers found matching your search.
+
+                </p>
+
+
+
+                <!-- ==================================================
+                     WORKER 1
+                     ================================================== -->
+
+                <div
+                    class="worker-card"
+                    data-service="plumbing"
+                    data-rating="4.8">
+
+
+                    <!-- Worker Image -->
+
+                    <img
+                        src="../assets/images/profile.png"
+                        alt="Ram Thapa"
+                        class="worker-image"
+                    >
+
+
+                    <!-- Worker Information -->
+
+                    <div class="worker-info">
+
+                        <h3>
+                            Ram Thapa
+                        </h3>
+
+                        <p class="worker-service">
+                            🔧 Professional Plumber
+                        </p>
+
+
+                        <div class="worker-details">
+
+                            <p>
+                                ⭐ 4.8 Rating
+                            </p>
+
+                            <p>
+                                📍 Kathmandu
+                            </p>
+
+                            <p>
+                                Experience: 5 Years
+                            </p>
+
+                            <p>
+                                💰 Starting from Rs. 700
+                            </p>
+
+                        </div>
+
+
+                        <p class="worker-status">
+                            🟢 Available
+                        </p>
+
+                    </div>
+
+
+                    <!-- Worker Action -->
+
+                    <div class="worker-action">
+
+                        <a href="../pages/worker-profile.html">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     WORKER 2
+                     ================================================== -->
+
+                <div
+                    class="worker-card"
+                    data-service="electrical"
+                    data-rating="4.7">
+
+
+                    <!-- Worker Image -->
+
+                    <img
+                        src="../assets/images/profile.png"
+                        alt="Suresh Kumar"
+                        class="worker-image"
+                    >
+
+
+                    <!-- Worker Information -->
+
+                    <div class="worker-info">
+
+                        <h3>
+                            Suresh Kumar
+                        </h3>
+
+                        <p class="worker-service">
+                            ⚡ Professional Electrician
+                        </p>
+
+
+                        <div class="worker-details">
+
+                            <p>
+                                ⭐ 4.7 Rating
+                            </p>
+
+                            <p>
+                                📍 Lalitpur
+                            </p>
+
+                            <p>
+                                Experience: 6 Years
+                            </p>
+
+                            <p>
+                                💰 Starting from Rs. 700
+                            </p>
+
+                        </div>
+
+
+                        <p class="worker-status">
+                            🟢 Available
+                        </p>
+
+                    </div>
+
+
+                    <!-- Worker Action -->
+
+                    <div class="worker-action">
+
+                        <a href="../pages/worker-profile.html">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     WORKER 3
+                     ================================================== -->
+
+                <div
+                    class="worker-card"
+                    data-service="it"
+                    data-rating="4.9">
+
+
+                    <!-- Worker Image -->
+
+                    <img
+                        src="../assets/images/profile.png"
+                        alt="Hari Sharma"
+                        class="worker-image"
+                    >
+
+
+                    <!-- Worker Information -->
+
+                    <div class="worker-info">
+
+                        <h3>
+                            Hari Sharma
+                        </h3>
+
+                        <p class="worker-service">
+                            💻 IT & Technical Support
+                        </p>
+
+
+                        <div class="worker-details">
+
+                            <p>
+                                ⭐ 4.9 Rating
+                            </p>
+
+                            <p>
+                                📍 Bhaktapur
+                            </p>
+
+                            <p>
+                                Experience: 4 Years
+                            </p>
+
+                            <p>
+                                💰 Starting from Rs. 500
+                            </p>
+
+                        </div>
+
+
+                        <p class="worker-status">
+                            🟢 Available
+                        </p>
+
+                    </div>
+
+
+                    <!-- Worker Action -->
+
+                    <div class="worker-action">
+
+                        <a href="../pages/worker-profile.html">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 KaamMitra.com. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         CUSTOMER JAVASCRIPT
+         ================================================== -->
+
+    <script src="../assets/js/customer.js"></script>
+
+
+</body>
+
+</html>

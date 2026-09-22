@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookings - KaamMitra.com</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="portal-sidebar">
+
+      <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                🔧 Workers
+            </a>
+
+            <a href="services.html">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html" class="active">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+            <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Manage Bookings
+            </h1>
+
+            <p>
+                Monitor customer bookings and service jobs.
+            </p>
+
+        </section>
+
+
+
+        <!-- BOOKING HEADER -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Booking List
+                </h2>
+
+                <span id="bookingCount">
+                    3 Bookings
+                </span>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="bookingSearch"
+                    placeholder="Search by customer, worker or service..."
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BOOKINGS -->
+
+        <section id="bookingList">
+
+
+            <!-- BOOKING 1 -->
+
+            <div
+                class="booking-card admin-booking-card"
+                data-service="Plumbing Service"
+                data-customer="Customer One"
+                data-worker="Ram Thapa"
+                data-location="Kathmandu"
+                data-status="confirmed"
+            >
+
+                <h3>
+                    🔧 Plumbing Service
+                </h3>
+
+                <p>
+                    Customer: Customer One
+                </p>
+
+                <p>
+                    Worker: Ram Thapa
+                </p>
+
+                <p>
+                    📍 Kathmandu
+                </p>
+
+                <p>
+                    📅 August 28, 2026
+                </p>
+
+                <p>
+                    💰 Rs. 1,000
+                </p>
+
+                <span class="status accepted booking-status">
+                    Confirmed
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-booking-btn"
+                    >
+                        View Booking
+                    </button>
+
+                    <button
+                        class="cancel-booking-btn"
+                    >
+                        Cancel
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOOKING 2 -->
+
+            <div
+                class="booking-card admin-booking-card"
+                data-service="Electrical Repair"
+                data-customer="Customer Two"
+                data-worker="Suresh Kumar"
+                data-location="Lalitpur"
+                data-status="pending"
+            >
+
+                <h3>
+                    ⚡ Electrical Repair
+                </h3>
+
+                <p>
+                    Customer: Customer Two
+                </p>
+
+                <p>
+                    Worker: Suresh Kumar
+                </p>
+
+                <p>
+                    📍 Lalitpur
+                </p>
+
+                <p>
+                    📅 August 29, 2026
+                </p>
+
+                <p>
+                    💰 Rs. 1,500
+                </p>
+
+                <span class="status upcoming booking-status">
+                    Pending
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-booking-btn"
+                    >
+                        View Booking
+                    </button>
+
+                    <button
+                        class="cancel-booking-btn"
+                    >
+                        Cancel
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOOKING 3 -->
+
+            <div
+                class="booking-card admin-booking-card"
+                data-service="Computer Repair"
+                data-customer="Customer Three"
+                data-worker="Hari Sharma"
+                data-location="Bhaktapur"
+                data-status="completed"
+            >
+
+                <h3>
+                    💻 Computer Repair
+                </h3>
+
+                <p>
+                    Customer: Customer Three
+                </p>
+
+                <p>
+                    Worker: Hari Sharma
+                </p>
+
+                <p>
+                    📍 Bhaktapur
+                </p>
+
+                <p>
+                    📅 August 25, 2026
+                </p>
+
+                <p>
+                    💰 Rs. 1,200
+                </p>
+
+                <span class="status accepted booking-status">
+                    Completed
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-booking-btn"
+                    >
+                        View Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

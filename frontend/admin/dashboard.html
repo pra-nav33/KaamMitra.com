@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - KaamMitra.com</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- ADMIN SIDEBAR -->
+
+    <aside class="portal-sidebar">
+<div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="active">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                🔧 Workers
+            </a>
+
+            <a href="services.html">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+             <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p>
+                Welcome to the KaamMitra administration panel.
+            </p>
+
+        </section>
+
+
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="summary-container">
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Customers
+                </h3>
+
+                <p id="totalCustomers">
+                    5,240
+                </p>
+
+                <span>
+                    Registered customers
+                </span>
+
+                <a href="users.html">
+                    View Users
+                </a>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Workers
+                </h3>
+
+                <p id="totalWorkers">
+                    1,280
+                </p>
+
+                <span>
+                    Registered workers
+                </span>
+
+                <a href="workers.html">
+                    View Workers
+                </a>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Bookings
+                </h3>
+
+                <p id="totalBookings">
+                    8,920
+                </p>
+
+                <span>
+                    All service bookings
+                </span>
+
+                <a href="bookings.html">
+                    View Bookings
+                </a>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Revenue
+                </h3>
+
+                <p id="totalRevenue">
+                    Rs. 1,248,500
+                </p>
+
+                <span>
+                    Platform revenue
+                </span>
+
+                <a href="payments.html">
+                    View Payments
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- RECENT BOOKINGS -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    Recent Bookings
+                </h2>
+
+                <a href="bookings.html">
+                    View All
+                </a>
+
+            </div>
+
+
+
+            <div class="booking-card">
+
+                <h3>
+                    🔧 Plumbing - Tap Repair
+                </h3>
+
+                <p>
+                    Customer: Pranav
+                </p>
+
+                <p>
+                    Worker: Ram Thapa
+                </p>
+
+                <p>
+                    📅 22 May 2024
+                </p>
+
+                <p>
+                    💰 Rs. 500
+                </p>
+
+                <span class="status accepted">
+                    Completed
+                </span>
+
+            </div>
+
+
+
+            <div class="booking-card">
+
+                <h3>
+                    ❄ AC Repair
+                </h3>
+
+                <p>
+                    Customer: Sita
+                </p>
+
+                <p>
+                    Worker: Hari Shrestha
+                </p>
+
+                <p>
+                    📅 21 May 2024
+                </p>
+
+                <p>
+                    💰 Rs. 800
+                </p>
+
+                <span class="status accepted">
+                    Confirmed
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- WORKER VERIFICATION -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    Worker Verification
+                </h2>
+
+                <a href="workers.html">
+                    View All
+                </a>
+
+            </div>
+
+
+
+            <div class="request-card">
+
+                <h3>
+                    🔧 New Worker Registration
+                </h3>
+
+                <p>
+                    Name: Bikram Lama
+                </p>
+
+                <p>
+                    Service: Plumbing
+                </p>
+
+                <p>
+                    Location: Kathmandu
+                </p>
+
+
+                <div class="card-actions">
+
+                    <a href="workers.html">
+                        Review Worker
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- ADMIN JAVASCRIPT -->
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

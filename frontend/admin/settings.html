@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Settings - KaamMitra.com</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+<body>
+
+<div class="portal-layout">
+
+
+    <!-- ================================
+         ADMIN SIDEBAR
+         ================================ -->
+
+    <aside class="portal-sidebar">
+<div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                👷 Workers
+            </a>
+
+            <a href="services.html">
+                🛠️ Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💳 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠️ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+
+            <a href="settings.html" class="active">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main class="portal-main">
+
+
+        <section class="portal-header">
+
+            <h1>
+                Settings
+            </h1>
+
+            <p>
+                Manage KaamMitra platform settings.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================================
+             PLATFORM SETTINGS
+             ================================ -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Platform Settings
+                </h2>
+
+            </div>
+
+
+            <form id="adminSettingsForm">
+
+
+                <!-- PLATFORM NAME -->
+
+                <div class="form-group">
+
+                    <label for="platformName">
+                        Platform Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="platformName"
+                        value="KaamMitra.com"
+                    >
+
+                </div>
+
+
+
+                <!-- MAINTENANCE MODE -->
+
+                <div class="form-group">
+
+                    <label>
+                        System Status
+                    </label>
+
+                    <div>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="maintenanceMode"
+                            >
+
+                            Enable Maintenance Mode
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CUSTOMER REGISTRATION -->
+
+                <div class="form-group">
+
+                    <label>
+                        Customer Registration
+                    </label>
+
+                    <div>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="customerRegistration"
+                                checked
+                            >
+
+                            Allow new customers to register
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WORKER REGISTRATION -->
+
+                <div class="form-group">
+
+                    <label>
+                        Worker Registration
+                    </label>
+
+                    <div>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="workerRegistration"
+                                checked
+                            >
+
+                            Allow new workers to register
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NOTIFICATIONS -->
+
+                <div class="form-group">
+
+                    <label>
+                        Admin Notifications
+                    </label>
+
+                    <div>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="adminBookingNotifications"
+                                checked
+                            >
+
+                            Booking notifications
+
+                        </label>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="adminPaymentNotifications"
+                                checked
+                            >
+
+                            Payment notifications
+
+                        </label>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="adminComplaintNotifications"
+                                checked
+                            >
+
+                            Complaint notifications
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CURRENCY -->
+
+                <div class="form-group">
+
+                    <label for="platformCurrency">
+                        Currency
+                    </label>
+
+                    <select id="platformCurrency">
+
+                        <option value="NPR">
+                            NPR - Nepalese Rupee
+                        </option>
+
+                        <option value="USD">
+                            USD - US Dollar
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- SAVE -->
+
+                <div class="card-actions">
+
+                    <button
+                        type="submit">
+
+                        Save Settings
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- Admin JavaScript -->
+
+<script src="../assets/js/admin.js"></script>
+
+</body>
+
+</html>

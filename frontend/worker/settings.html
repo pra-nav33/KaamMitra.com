@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - KaamMitra</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/worker.css">
+</head>
+<body>
+
+    <div class="portal-layout">
+
+        <!-- Worker Sidebar -->
+        <aside class="portal-sidebar">
+
+         <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+            <div class="portal-title">
+                WORKER PORTAL
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html">🏠 Dashboard</a>
+                <a href="requests.html">📋 Job Requests</a>
+                <a href="jobs.html">🔧 My Jobs</a>
+                <a href="earnings.html">💰 Earnings</a>
+                <a href="messages.html">💬 Messages</a>
+                <a href="notifications.html">🔔 Notifications</a>
+                <a href="profile.html">👤 Profile</a>
+                <a href="settings.html" class="active">⚙️ Settings</a>
+                <a href="../pages/login.html">🚪 Logout</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="portal-main">
+
+            <!-- Page Header -->
+            <div class="portal-header">
+                <h1>Settings</h1>
+                <p>Manage your account preferences and security settings.</p>
+            </div>
+
+
+            <!-- Account Settings -->
+            <section class="settings-section">
+
+                <h2>Account Settings</h2>
+
+                <div class="settings-card">
+
+                    <form id="workerSettingsForm">
+
+                        <div class="form-group">
+                            <label for="workerFullName">Full Name</label>
+                            <input
+                                type="text"
+                                id="workerFullName"
+                                value="Ram Thapa"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workerEmail">Email Address</label>
+                            <input
+                                type="email"
+                                id="workerEmail"
+                                value="worker@kaammitra.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workerPhone">Phone Number</label>
+                            <input
+                                type="text"
+                                id="workerPhone"
+                                value="9800000000"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workerLocation">Default Location</label>
+                            <input
+                                type="text"
+                                id="workerLocation"
+                                value="Kathmandu"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workerAvailability">Availability</label>
+                            <select id="workerAvailability">
+                                <option value="available">Available for new jobs</option>
+                                <option value="busy">Busy</option>
+                                <option value="offline">Offline</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn">
+                            Save Changes
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notification Preferences -->
+            <section class="settings-section">
+
+                <h2>Notification Preferences</h2>
+
+                <div class="settings-card">
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            id="workerJobNotifications"
+                            checked
+                        >
+                        New job request notifications
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            id="workerMessageNotifications"
+                            checked
+                        >
+                        New message notifications
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            id="workerPaymentNotifications"
+                            checked
+                        >
+                        Payment notifications
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            id="workerReviewNotifications"
+                            checked
+                        >
+                        Review and rating notifications
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- Security -->
+            <section class="settings-section">
+
+                <h2>Security</h2>
+
+                <div class="settings-card">
+
+                    <h3>Change Password</h3>
+
+                    <p>
+                        Keep your KaamMitra account secure by regularly
+                        updating your password.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="workerPassword">
+                            New Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="workerPassword"
+                            placeholder="Enter new password"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="workerConfirmPassword">
+                            Confirm New Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="workerConfirmPassword"
+                            placeholder="Confirm new password"
+                        >
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn"
+                        id="changeWorkerPasswordBtn"
+                    >
+                        Change Password
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Language -->
+            <section class="settings-section">
+
+                <h2>Language</h2>
+
+                <div class="settings-card">
+
+                    <div class="form-group">
+
+                        <label for="workerLanguage">
+                            Preferred Language
+                        </label>
+
+                        <select id="workerLanguage">
+                            <option value="English">English</option>
+                            <option value="Nepali">नेपाली</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Account -->
+            <section class="settings-section">
+
+                <h2>Account</h2>
+
+                <div class="settings-card">
+
+                    <h3>Logout</h3>
+
+                    <p>
+                        Sign out of your KaamMitra worker account.
+                    </p>
+
+                    <a
+                        href="../pages/login.html"
+                        class="btn"
+                    >
+                        Logout
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2026 KaamMitra.com. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Worker JavaScript -->
+    <script src="../assets/js/worker.js"></script>
+
+</body>
+</html>

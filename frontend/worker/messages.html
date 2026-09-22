@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Worker Messages - KaamMitra.com</title>
+
+   <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/worker.css">
+</head>
+
+<body>
+
+<div class="portal-layout">
+
+
+    <!-- ================================
+         WORKER SIDEBAR
+         ================================ -->
+
+    <aside class="portal-sidebar">
+<div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+        <p class="portal-title">
+            WORKER PORTAL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="requests.html">
+                📋 Job Requests
+            </a>
+
+            <a href="jobs.html">
+                🔧 My Jobs
+            </a>
+
+            <a href="earnings.html">
+                💰 Earnings
+            </a>
+
+            <a href="messages.html" class="active">
+                💬 Messages
+            </a>
+
+            <a href="notifications.html">
+                🔔 Notifications
+            </a>
+
+            <a href="profile.html">
+                👤 Profile
+            </a>
+            <a href="settings.html">
+    ⚙️ Settings
+</a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main class="portal-main">
+
+
+        <section class="portal-header">
+
+            <h1>
+                Messages
+            </h1>
+
+            <p>
+                Communicate with your customers.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================================
+             MESSAGE CONTAINER
+             ================================ -->
+
+        <section class="messages-container">
+
+
+            <!-- ================================
+                 CUSTOMER LIST
+                 ================================ -->
+
+            <aside class="conversation-list">
+
+                <h2>
+                    Customers
+                </h2>
+
+
+                <div class="conversation"
+                     data-customer="customer1">
+
+                    <h3>
+                        Customer One
+                    </h3>
+
+                    <p>
+                        Plumbing Service
+                    </p>
+
+                </div>
+
+
+                <div class="conversation"
+                     data-customer="customer2">
+
+                    <h3>
+                        Customer Two
+                    </h3>
+
+                    <p>
+                        Electrical Repair
+                    </p>
+
+                </div>
+
+
+                <div class="conversation"
+                     data-customer="customer3">
+
+                    <h3>
+                        Customer Three
+                    </h3>
+
+                    <p>
+                        Computer Repair
+                    </p>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- ================================
+                 CHAT AREA
+                 ================================ -->
+
+            <section class="chat-area">
+
+
+                <div class="chat-header">
+
+                    <h2 id="customerName">
+                        Customer One
+                    </h2>
+
+                    <p id="customerService">
+                        Plumbing Service
+                    </p>
+
+                </div>
+
+
+
+                <div class="chat-messages"
+                     id="chatMessages">
+
+
+                    <!-- CUSTOMER MESSAGE
+                         LEFT SIDE -->
+
+                    <div class="message worker-message">
+
+                        <p>
+                            Hello, I need help with my water tap.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- WORKER MESSAGE
+                         RIGHT SIDE -->
+
+                    <div class="message customer-message">
+
+                        <p>
+                            Sure. I can help you with that.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- MESSAGE INPUT -->
+
+                <div class="message-input">
+
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Type your message..."
+                    >
+
+
+                    <button
+                        type="button"
+                        id="sendMessageBtn">
+
+                        Send
+
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- ================================
+     FOOTER
+     ================================ -->
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- Worker Portal JavaScript -->
+
+<script src="../assets/js/worker.js"></script>
+
+</body>
+
+</html>

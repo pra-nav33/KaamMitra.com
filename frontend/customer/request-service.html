@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Information -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Request Service - KaamMitra.com</title>
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/customer.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         CUSTOMER PORTAL
+         ================================================== -->
+
+    <div class="portal-layout">
+
+
+        <!-- ==================================================
+             SIDEBAR
+             ================================================== -->
+
+        <aside class="portal-sidebar">
+
+       <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+            <p class="portal-title">
+                CUSTOMER PORTAL
+            </p>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="search.html">
+                    🔍 Find Workers
+                </a>
+
+                <a href="bookings.html">
+                    📅 My Bookings
+                </a>
+
+                <a href="request-service.html" class="active">
+                    📝 Request Service
+                </a>
+
+                <a href="saved-workers.html">
+                    ⭐ Saved Workers
+                </a>
+
+                <a href="messages.html">
+                    💬 Messages
+                </a>
+
+                <a href="notifications.html">
+                    🔔 Notifications
+                </a>
+
+                <a href="payment.html">
+                    💳 Payments
+                </a>
+
+                <a href="review.html">
+                    ⭐ Reviews
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="settings.html">
+                    ⚙️ Settings
+                </a>
+
+                <a href="../index.html">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             MAIN CONTENT
+             ================================================== -->
+
+        <main class="portal-main">
+
+
+            <!-- ==================================================
+                 PAGE HEADER
+                 ================================================== -->
+
+            <section class="portal-header">
+
+                <h1>
+                    Request a Service
+                </h1>
+
+                <p>
+                    Tell us what work you need and request a trusted worker.
+                </p>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 SELECTED WORKER
+                 ================================================== -->
+
+            <section class="selected-worker">
+
+                <h2>
+                    Selected Worker
+                </h2>
+
+
+                <div class="selected-worker-card">
+
+                    <div class="selected-worker-image">
+
+                        <img
+                            src="../assets/images/profile.png"
+                            alt="Ram Thapa - Professional Plumber"
+                        >
+
+                    </div>
+
+
+                    <div class="selected-worker-info">
+
+                        <h3>
+                            Ram Thapa
+                        </h3>
+
+                        <p>
+                            🔧 Professional Plumber
+                        </p>
+
+                        <p>
+                            ⭐ 4.8 / 5 (120 Reviews)
+                        </p>
+
+                        <p>
+                            📍 Kathmandu
+                        </p>
+
+                        <p>
+                            💰 Starting from Rs. 500
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 SERVICE REQUEST FORM
+                 ================================================== -->
+
+            <section class="service-request">
+
+                <h2>
+                    Service Details
+                </h2>
+
+
+                <form id="serviceRequestForm">
+
+
+                    <!-- ==================================================
+                         SERVICE INFORMATION
+                         ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Service Category
+                        </label>
+
+                        <select
+                            id="category"
+                            name="category"
+                            required
+                        >
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option value="household">
+                                Household Services
+                            </option>
+
+                            <option value="appliance">
+                                Appliance & Electronics Repair
+                            </option>
+
+                            <option value="electrical">
+                                Electrical Services
+                            </option>
+
+                            <option value="plumbing">
+                                Plumbing & Water Services
+                            </option>
+
+                            <option value="it">
+                                IT & Technical Services
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Service Type -->
+
+                    <div class="form-group">
+
+                        <label for="service-type">
+                            Service Type
+                        </label>
+
+                        <input
+                            type="text"
+                            id="service-type"
+                            name="service_type"
+                            placeholder="Example: Tap Repair"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Description -->
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Describe Your Work
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="5"
+                            placeholder="Describe the problem or work you need..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         CUSTOMER INFORMATION
+                         ================================================== -->
+
+                    <h2 class="form-subheading">
+                        Contact Information
+                    </h2>
+
+
+                    <!-- Customer Name -->
+
+                    <div class="form-group">
+
+                        <label for="customer-name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-name"
+                            name="customer_name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Contact Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Example: 98XXXXXXXX"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         SERVICE LOCATION
+                         ================================================== -->
+
+                    <h2 class="form-subheading">
+                        Service Location
+                    </h2>
+
+
+                    <!-- Location -->
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Address / Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Example: Kathmandu, Baneshwor"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         DATE AND TIME
+                         ================================================== -->
+
+                    <h2 class="form-subheading">
+                        Preferred Schedule
+                    </h2>
+
+
+                    <!-- Date -->
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Time -->
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="time"
+                            name="time"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         BUDGET
+                         ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="budget">
+                            Your Budget (Rs.)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="budget"
+                            name="budget"
+                            min="0"
+                            placeholder="Example: 1500"
+                        >
+
+                        <small>
+                            Final price may vary depending on the work required.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         ADDITIONAL INSTRUCTIONS
+                         ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="instructions">
+                            Additional Instructions
+                        </label>
+
+                        <textarea
+                            id="instructions"
+                            name="instructions"
+                            rows="4"
+                            placeholder="Add any additional information for the worker..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         REQUEST SUMMARY
+                         ================================================== -->
+
+                    <div class="request-summary">
+
+                        <h2>
+                            Request Summary
+                        </h2>
+
+                        <p>
+                            <strong>Worker:</strong>
+                            Ram Thapa
+                        </p>
+
+                        <p>
+                            <strong>Service:</strong>
+                            Plumbing Service
+                        </p>
+
+                        <p>
+                            <strong>Starting Price:</strong>
+                            Rs. 500
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+                            Request will be sent to the worker for confirmation.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         FORM ACTIONS
+                         ================================================== -->
+
+                    <div class="form-actions">
+
+                        <button type="submit">
+                            🔧 Submit Service Request
+                        </button>
+
+
+                        <a href="search.html">
+                            ← Back to Workers
+                        </a>
+
+                    </div>
+
+
+                </form>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 KaamMitra.com. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         CUSTOMER JAVASCRIPT
+         ================================================== -->
+
+    <script src="../assets/js/customer.js"></script>
+
+
+</body>
+
+</html>

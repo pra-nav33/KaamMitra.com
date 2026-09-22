@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workers - KaamMitra.com</title>
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="portal-sidebar">
+
+       <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html" class="active">
+                🔧 Workers
+            </a>
+
+            <a href="services.html">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+            <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Workers
+            </h1>
+
+            <p>
+                Manage and verify service workers.
+            </p>
+
+        </section>
+
+
+
+        <!-- WORKER LIST HEADER -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Worker List
+                </h2>
+
+                <span id="workerCount">
+                    1,280 Workers
+                </span>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="workerSearch"
+                    placeholder="Search worker by name, service or location..."
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- WORKERS -->
+
+        <section id="workerList">
+
+
+
+            <!-- WORKER 1 -->
+
+            <div
+                class="request-card worker-card"
+                data-worker-id="worker1"
+                data-name="Ram Thapa"
+                data-service="Professional Plumber"
+                data-location="Kathmandu"
+                data-status="verified"
+            >
+
+                <h3>
+                    🔧 Ram Thapa
+                </h3>
+
+                <p>
+                    Service: Professional Plumber
+                </p>
+
+                <p>
+                    📍 Kathmandu
+                </p>
+
+                <p>
+                    ⭐ Rating: 4.8
+                </p>
+
+                <p>
+                    Experience: 5 Years
+                </p>
+
+                <span class="status accepted worker-status">
+                    Verified
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-worker-btn"
+                        data-worker="Ram Thapa"
+                    >
+                        View Profile
+                    </button>
+
+                    <button
+                        class="toggle-worker-btn"
+                        data-worker="Ram Thapa"
+                    >
+                        Suspend
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WORKER 2 -->
+
+            <div
+                class="request-card worker-card"
+                data-worker-id="worker2"
+                data-name="Suresh Kumar"
+                data-service="Professional Electrician"
+                data-location="Lalitpur"
+                data-status="verified"
+            >
+
+                <h3>
+                    ⚡ Suresh Kumar
+                </h3>
+
+                <p>
+                    Service: Professional Electrician
+                </p>
+
+                <p>
+                    📍 Lalitpur
+                </p>
+
+                <p>
+                    ⭐ Rating: 4.7
+                </p>
+
+                <p>
+                    Experience: 6 Years
+                </p>
+
+                <span class="status accepted worker-status">
+                    Verified
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-worker-btn"
+                        data-worker="Suresh Kumar"
+                    >
+                        View Profile
+                    </button>
+
+                    <button
+                        class="toggle-worker-btn"
+                        data-worker="Suresh Kumar"
+                    >
+                        Suspend
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WORKER 3 -->
+
+            <div
+                class="request-card worker-card"
+                data-worker-id="worker3"
+                data-name="Hari Sharma"
+                data-service="IT & Technical Support"
+                data-location="Bhaktapur"
+                data-status="pending"
+            >
+
+                <h3>
+                    💻 Hari Sharma
+                </h3>
+
+                <p>
+                    Service: IT & Technical Support
+                </p>
+
+                <p>
+                    📍 Bhaktapur
+                </p>
+
+                <p>
+                    ⭐ Rating: 4.9
+                </p>
+
+                <p>
+                    Experience: 4 Years
+                </p>
+
+                <span class="status upcoming worker-status">
+                    Pending Verification
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-worker-btn"
+                        data-worker="Hari Sharma"
+                    >
+                        View Profile
+                    </button>
+
+                    <button
+                        class="approve-worker-btn"
+                        data-worker="Hari Sharma"
+                    >
+                        Approve
+                    </button>
+
+                    <button
+                        class="reject-worker-btn"
+                        data-worker="Hari Sharma"
+                    >
+                        Reject
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- ADMIN JAVASCRIPT -->
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

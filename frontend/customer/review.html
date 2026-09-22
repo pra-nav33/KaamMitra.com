@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reviews - KaamMitra.com</title>
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/customer.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         CUSTOMER PORTAL
+         ================================================== -->
+
+    <div class="portal-layout">
+
+
+        <!-- ==================================================
+             SIDEBAR
+             ================================================== -->
+
+        <aside class="portal-sidebar">
+
+           <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+            <p class="portal-title">
+                CUSTOMER PORTAL
+            </p>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="search.html">
+                    🔍 Find Workers
+                </a>
+
+                <a href="bookings.html">
+                    📅 My Bookings
+                </a>
+
+                <a href="request-service.html">
+                    📝 Request Service
+                </a>
+
+                <a href="saved-workers.html">
+                    ⭐ Saved Workers
+                </a>
+
+                <a href="messages.html">
+                    💬 Messages
+                </a>
+
+                <a href="notifications.html">
+                    🔔 Notifications
+                </a>
+
+                <a href="payment.html">
+                    💳 Payments
+                </a>
+
+                <a href="review.html" class="active">
+                    ⭐ Reviews
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="settings.html">
+                    ⚙️ Settings
+                </a>
+
+                <a href="../index.html">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             MAIN CONTENT
+             ================================================== -->
+
+        <main class="portal-main">
+
+
+            <!-- ==================================================
+                 PAGE HEADER
+                 ================================================== -->
+
+            <section class="portal-header">
+
+                <h1>
+                    Reviews & Ratings
+                </h1>
+
+                <p>
+                    Share your experience with workers after completing a service.
+                </p>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 REVIEW PENDING
+                 ================================================== -->
+
+            <section>
+
+                <h2>
+                    Leave a Review
+                </h2>
+
+
+                <div class="booking-card">
+
+                    <h3>
+                        🔧 Plumbing Service
+                    </h3>
+
+                    <p>
+                        <strong>Worker:</strong> Ram Thapa
+                    </p>
+
+                    <p>
+                        <strong>Service:</strong> Pipe Leakage Repair
+                    </p>
+
+                    <p>
+                        <strong>Completed:</strong> 25 August 2026
+                    </p>
+
+
+                    <form id="reviewForm">
+
+
+                        <!-- Rating -->
+
+                        <div class="search-field">
+
+                            <label for="rating">
+                                Your Rating
+                            </label>
+
+                            <select id="rating" required>
+
+                                <option value="">
+                                    Select Rating
+                                </option>
+
+                                <option value="5">
+                                    ⭐⭐⭐⭐⭐ Excellent
+                                </option>
+
+                                <option value="4">
+                                    ⭐⭐⭐⭐ Very Good
+                                </option>
+
+                                <option value="3">
+                                    ⭐⭐⭐ Good
+                                </option>
+
+                                <option value="2">
+                                    ⭐⭐ Poor
+                                </option>
+
+                                <option value="1">
+                                    ⭐ Very Poor
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Review -->
+
+                        <div class="search-field">
+
+                            <label for="reviewText">
+                                Your Review
+                            </label>
+
+                            <textarea
+                                id="reviewText"
+                                rows="6"
+                                placeholder="Write about your experience with this worker..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <!-- Submit -->
+
+                        <button
+                            type="submit"
+                            class="payment-button"
+                        >
+                            Submit Review
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PREVIOUS REVIEWS
+                 ================================================== -->
+
+            <section>
+
+                <h2>
+                    Your Previous Reviews
+                </h2>
+
+
+                <div class="booking-card">
+
+                    <h3>
+                        ⚡ Electrical Repair
+                    </h3>
+
+                    <p>
+                        <strong>Worker:</strong> Suresh Kumar
+                    </p>
+
+                    <p>
+                        <strong>Your Rating:</strong>
+                        ⭐⭐⭐⭐⭐
+                    </p>
+
+                    <p>
+                        Excellent service. The electrical problem was fixed quickly and professionally.
+                    </p>
+
+                    <small>
+                        Reviewed on 16 August 2026
+                    </small>
+
+                </div>
+
+
+                <div class="booking-card">
+
+                    <h3>
+                        💻 Computer Repair
+                    </h3>
+
+                    <p>
+                        <strong>Worker:</strong> Hari Karki
+                    </p>
+
+                    <p>
+                        <strong>Your Rating:</strong>
+                        ⭐⭐⭐⭐
+                    </p>
+
+                    <p>
+                        Good service and reasonable pricing.
+                    </p>
+
+                    <small>
+                        Reviewed on 11 August 2026
+                    </small>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 KaamMitra.com. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         CUSTOMER JAVASCRIPT
+         ================================================== -->
+
+    <script src="../assets/js/customer.js"></script>
+
+
+</body>
+
+</html>

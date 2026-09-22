@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Users - KaamMitra.com</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="portal-sidebar">
+
+       <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html" class="active">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                🔧 Workers
+            </a>
+
+            <a href="services.html">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+            <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Users
+            </h1>
+
+            <p>
+                Manage customers registered on KaamMitra.
+            </p>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Customer List
+                </h2>
+
+                <span id="userCount">
+                    5,240 Users
+                </span>
+
+            </div>
+
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="userSearch"
+                    placeholder="Search user by name, email or location..."
+                >
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- USERS -->
+
+        <section id="userList">
+
+
+
+            <!-- USER 1 -->
+
+            <div
+                class="booking-card user-card"
+                data-name="Pranav"
+                data-email="pranav@example.com"
+                data-location="Kathmandu"
+                data-status="active"
+            >
+
+                <h3>
+                    👤 Pranav
+                </h3>
+
+                <p>
+                    Email: pranav@example.com
+                </p>
+
+                <p>
+                    Location: Kathmandu
+                </p>
+
+                <p>
+                    Joined: May 2026
+                </p>
+
+                <span class="status accepted user-status">
+                    Active
+                </span>
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-user-btn"
+                        data-user="Pranav"
+                    >
+                        View
+                    </button>
+
+                    <button
+                        class="toggle-user-btn"
+                        data-user="Pranav"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- USER 2 -->
+
+            <div
+                class="booking-card user-card"
+                data-name="Sita Sharma"
+                data-email="sita@example.com"
+                data-location="Lalitpur"
+                data-status="active"
+            >
+
+                <h3>
+                    👤 Sita Sharma
+                </h3>
+
+                <p>
+                    Email: sita@example.com
+                </p>
+
+                <p>
+                    Location: Lalitpur
+                </p>
+
+                <p>
+                    Joined: April 2026
+                </p>
+
+                <span class="status accepted user-status">
+                    Active
+                </span>
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-user-btn"
+                        data-user="Sita Sharma"
+                    >
+                        View
+                    </button>
+
+                    <button
+                        class="toggle-user-btn"
+                        data-user="Sita Sharma"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- USER 3 -->
+
+            <div
+                class="booking-card user-card"
+                data-name="Ramesh Kumar"
+                data-email="ramesh@example.com"
+                data-location="Bhaktapur"
+                data-status="pending"
+            >
+
+                <h3>
+                    👤 Ramesh Kumar
+                </h3>
+
+                <p>
+                    Email: ramesh@example.com
+                </p>
+
+                <p>
+                    Location: Bhaktapur
+                </p>
+
+                <p>
+                    Joined: March 2026
+                </p>
+
+                <span class="status upcoming user-status">
+                    Pending
+                </span>
+
+                <div class="card-actions">
+
+                    <button
+                        class="view-user-btn"
+                        data-user="Ramesh Kumar"
+                    >
+                        View
+                    </button>
+
+                    <button
+                        class="toggle-user-btn"
+                        data-user="Ramesh Kumar"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- ADMIN JAVASCRIPT -->
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

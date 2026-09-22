@@ -1,0 +1,572 @@
+/* =========================================================
+   KaamMitra.com
+   CUSTOMER PORTAL CSS
+   ========================================================= */
+
+
+/* =========================================================
+   CUSTOMER PORTAL SIDEBAR
+   ========================================================= */
+.customer-portal .portal-sidebar {
+    height: 100vh;
+}
+/* =========================================================
+   CUSTOMER DASHBOARD
+   ========================================================= */
+.customer-portal .welcome-section {
+    position: relative;
+}
+
+.customer-portal .action-container {
+    margin-bottom: 30px;
+}
+
+.customer-portal .summary-container {
+    margin-bottom: 35px;
+}
+/* =========================================================
+   CUSTOMER BOOKING CARDS
+   ========================================================= */
+.customer-portal .booking-card {
+    position: relative;
+}
+.customer-portal .booking-card h3 {
+    color: var(--dark);
+}
+.customer-portal .booking-card p {
+    color: var(--text);
+}
+.customer-portal .booking-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+.customer-portal .booking-actions a {
+    margin-top: 0;
+}
+/* =========================================================
+   CUSTOMER SAVED WORKERS
+   ========================================================= */
+.customer-portal .saved-worker-card {
+    padding: 22px;
+    position: relative;
+}
+.customer-portal .saved-worker-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+.customer-portal .saved-worker-card h3 {
+    margin: 5px 0;
+}
+.customer-portal .saved-worker-card p {
+    color: var(--muted);
+    margin: 4px 0;
+}
+/* =========================================================
+   CUSTOMER REQUEST CARDS
+   ========================================================= */
+.customer-portal .request-card {
+    position: relative;
+}
+.customer-portal .request-card .status {
+    margin-top: 5px;
+}
+/* =========================================================
+   CUSTOMER MESSAGES
+   ========================================================= */
+.customer-portal .messages-container {
+    min-height: 500px;
+}
+.customer-portal .conversation {
+    position: relative;
+}
+.customer-portal .conversation.active {
+    background: var(--primary-soft);
+    border-color: var(--primary);
+}
+.customer-portal .chat-messages {
+    overflow-y: auto;
+}
+.customer-portal .customer-message {
+    border-bottom-right-radius: 4px;
+}
+.customer-portal .worker-message {
+    border-bottom-left-radius: 4px;
+}
+/* =========================================================
+   CUSTOMER NOTIFICATIONS
+   ========================================================= */
+.customer-portal .notification {
+    transition: var(--transition);
+}
+.customer-portal .notification:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+/* =========================================================
+   CUSTOMER PROFILE
+   ========================================================= */
+.customer-portal .profile-section {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+}
+.customer-portal .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.customer-portal .profile-header .profile-image {
+    flex-shrink: 0;
+}
+/* =========================================================
+   CUSTOMER SETTINGS
+   ========================================================= */
+.customer-portal .settings-card {
+    max-width: 850px;
+}
+/* =========================================================
+   CUSTOMER RESPONSIVE
+   ========================================================= */
+@media (max-width: 768px) {
+    .customer-portal .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .customer-portal .booking-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .customer-portal .booking-actions a {
+        text-align: center;
+    }
+}
+/* ==================================================
+   SAVED WORKERS PAGE
+   ================================================== */
+.saved-worker-card {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 0 22px 0;
+    padding: 24px 26px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+.saved-worker-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+/* Worker profile area */
+.saved-worker-profile {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex: 1;
+    min-width: 0;
+}
+/* Worker image */
+.saved-worker-image {
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary-light);
+    flex-shrink: 0;
+}
+/* Worker information */
+.saved-worker-main {
+    flex: 1;
+    min-width: 0;
+}
+.saved-worker-main h2 {
+    margin: 0 0 6px;
+    font-size: 21px;
+    color: var(--dark);
+}
+.saved-worker-service {
+    margin: 0 0 15px;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+/* Worker details */
+
+.saved-worker-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 9px 24px;
+    color: var(--text);
+    font-size: 14px;
+}
+.saved-worker-details span {
+    display: block;
+}
+/* Availability */
+.saved-worker-main .worker-status {
+    margin: 14px 0 0;
+    color: #168a4a;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* View profile button */
+.saved-worker-action {
+    flex-shrink: 0;
+}
+.saved-worker-action a {
+    display: inline-block;
+    padding: 11px 20px;
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+.saved-worker-action a:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+/* Back to dashboard */
+.profile-actions {
+    max-width: 1050px;
+    margin-top: 28px;
+}
+.profile-actions a {
+    display: inline-block;
+    padding: 11px 18px;
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+.profile-actions a:hover {
+    background: var(--primary-dark);
+}
+/* ==================================================
+   SAVED WORKERS RESPONSIVE
+   ================================================== */
+@media (max-width: 850px) {
+    .saved-worker-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .saved-worker-profile {
+        width: 100%;
+    }
+    .saved-worker-action {
+        width: 100%;
+    }
+    .saved-worker-action a {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .saved-worker-card {
+        padding: 20px;
+    }
+    .saved-worker-profile {
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .saved-worker-image {
+        width: 72px;
+        height: 72px;
+    }
+    .saved-worker-main h2 {
+        font-size: 18px;
+    }
+    .saved-worker-details {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+/* =========================================================
+   FIND WORKERS PAGE
+   Available Workers
+   Scoped only to customer/search.html
+   ========================================================= */
+
+.find-workers-page {
+    padding-bottom: 50px;
+}
+
+/* Available workers heading */
+.find-workers-page > h2,
+.find-workers-page .workers-section-title {
+    max-width: 1050px;
+    margin: 0 0 20px 0;
+    color: var(--dark);
+    font-size: 24px;
+}
+
+/* =========================================================
+   AVAILABLE WORKER CARD
+   ========================================================= */
+
+.find-workers-page .worker-card {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 0 20px 0;
+    padding: 22px 26px;
+
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+
+    box-sizing: border-box;
+}
+
+/* Hover effect */
+.find-workers-page .worker-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+/* =========================================================
+   WORKER PROFILE IMAGE
+   ========================================================= */
+
+.find-workers-page .worker-image {
+    width: 92px;
+    height: 92px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid var(--primary-light);
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   WORKER INFORMATION
+   ========================================================= */
+
+.find-workers-page .worker-info {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Worker name */
+.find-workers-page .worker-info h3,
+.find-workers-page .worker-card h3 {
+    margin: 0 0 6px 0;
+
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Worker service */
+.find-workers-page .worker-service {
+    margin: 0 0 13px 0;
+
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   WORKER DETAILS
+   ========================================================= */
+
+.find-workers-page .worker-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+
+    gap: 8px 25px;
+
+    color: var(--text);
+    font-size: 14px;
+}
+
+.find-workers-page .worker-details p,
+.find-workers-page .worker-details span {
+    margin: 0;
+}
+
+/* Available status */
+.find-workers-page .worker-status {
+    margin: 12px 0 0 0;
+
+    color: #168a4a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   VIEW PROFILE BUTTON
+   ========================================================= */
+
+.find-workers-page .worker-card > a,
+.find-workers-page .worker-action a {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: var(--transition);
+}
+
+.find-workers-page .worker-card > a:hover,
+.find-workers-page .worker-action a:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+.profile-image
+ 
+/* =========================================================
+   WORKER ACTION AREA
+   ========================================================= */
+
+.find-workers-page .worker-action {
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .find-workers-page .worker-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .find-workers-page .worker-info {
+        width: 100%;
+    }
+
+    .find-workers-page .worker-action {
+        width: 100%;
+    }
+
+    .find-workers-page .worker-card > a,
+    .find-workers-page .worker-action a {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .find-workers-page .worker-card {
+        padding: 20px;
+    }
+
+    .find-workers-page .worker-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .find-workers-page .worker-info h3,
+    .find-workers-page .worker-card h3 {
+        font-size: 18px;
+    }
+
+    .find-workers-page .worker-details {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+/* =========================================================
+   FIND WORKERS SECTION HEADING
+   ========================================================= */
+
+.find-workers-page .workers-section-heading {
+    max-width: 1050px;
+    margin-bottom: 20px;
+}
+
+.find-workers-page .workers-section-heading h2 {
+    margin: 0 0 5px 0;
+    color: var(--dark);
+    font-size: 24px;
+}
+
+.find-workers-page .workers-section-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+/* =========================================================
+   REQUEST SERVICE PAGE - SELECTED WORKER
+   ========================================================= */
+.selected-worker-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 24px 26px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    max-width: 1050px;
+}
+
+.selected-worker-image {
+    width: 92px;
+    height: 92px;
+    flex-shrink: 0;
+}
+
+.selected-worker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary-light);
+}
+
+.selected-worker-info h3 {
+    margin: 0 0 6px;
+    font-size: 21px;
+    color: var(--dark);
+}
+
+.selected-worker-info p {
+    margin: 4px 0;
+    color: var(--text);
+    font-size: 14px;
+}

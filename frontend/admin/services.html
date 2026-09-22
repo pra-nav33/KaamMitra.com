@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services - KaamMitra.com</title>
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="portal-sidebar">
+
+      <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                🔧 Workers
+            </a>
+
+            <a href="services.html" class="active">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+            <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Services
+            </h1>
+
+            <p>
+                Manage the services available on KaamMitra.
+            </p>
+
+        </section>
+
+
+
+        <!-- SERVICE HEADER -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Service Categories
+                </h2>
+
+                <button id="addServiceBtn">
+                    + Add Service
+                </button>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="serviceSearch"
+                    placeholder="Search service category..."
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SERVICES -->
+
+        <section id="serviceList">
+
+
+            <!-- SERVICE 1 -->
+
+            <div
+                class="booking-card service-card"
+                data-service="Household Services"
+                data-status="active"
+            >
+
+                <h3>
+                    🏠 Household Services
+                </h3>
+
+                <p>
+                    Cleaning, cooking and other household work.
+                </p>
+
+                <p>
+                    Workers: 320
+                </p>
+
+                <span class="status accepted service-status">
+                    Active
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="edit-service-btn"
+                    >
+                        Edit
+                    </button>
+
+                    <button
+                        class="toggle-service-btn"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 2 -->
+
+            <div
+                class="booking-card service-card"
+                data-service="Appliance & Electronics"
+                data-status="active"
+            >
+
+                <h3>
+                    ❄ Appliance & Electronics
+                </h3>
+
+                <p>
+                    Repair and maintenance of home appliances.
+                </p>
+
+                <p>
+                    Workers: 210
+                </p>
+
+                <span class="status accepted service-status">
+                    Active
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="edit-service-btn"
+                    >
+                        Edit
+                    </button>
+
+                    <button
+                        class="toggle-service-btn"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 3 -->
+
+            <div
+                class="booking-card service-card"
+                data-service="Electrical Services"
+                data-status="active"
+            >
+
+                <h3>
+                    ⚡ Electrical Services
+                </h3>
+
+                <p>
+                    Electrical installation and repair services.
+                </p>
+
+                <p>
+                    Workers: 260
+                </p>
+
+                <span class="status accepted service-status">
+                    Active
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="edit-service-btn"
+                    >
+                        Edit
+                    </button>
+
+                    <button
+                        class="toggle-service-btn"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 4 -->
+
+            <div
+                class="booking-card service-card"
+                data-service="Plumbing & Water"
+                data-status="active"
+            >
+
+                <h3>
+                    🔧 Plumbing & Water
+                </h3>
+
+                <p>
+                    Plumbing repair and water-related services.
+                </p>
+
+                <p>
+                    Workers: 300
+                </p>
+
+                <span class="status accepted service-status">
+                    Active
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="edit-service-btn"
+                    >
+                        Edit
+                    </button>
+
+                    <button
+                        class="toggle-service-btn"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 5 -->
+
+            <div
+                class="booking-card service-card"
+                data-service="IT & Technical Services"
+                data-status="active"
+            >
+
+                <h3>
+                    💻 IT & Technical Services
+                </h3>
+
+                <p>
+                    Computer, software and technical assistance.
+                </p>
+
+                <p>
+                    Workers: 190
+                </p>
+
+                <span class="status accepted service-status">
+                    Active
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        class="edit-service-btn"
+                    >
+                        Edit
+                    </button>
+
+                    <button
+                        class="toggle-service-btn"
+                    >
+                        Disable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

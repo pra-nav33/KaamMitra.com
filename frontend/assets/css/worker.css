@@ -1,0 +1,188 @@
+/* =========================================================
+   KaamMitra.com
+   WORKER PORTAL CSS
+   ========================================================= */
+
+
+/* =========================================================
+   WORKER DASHBOARD
+   ========================================================= */
+
+.worker-portal .welcome-section {
+    position: relative;
+}
+
+.worker-portal .summary-container {
+    margin-bottom: 35px;
+}
+
+.worker-portal .action-container {
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   WORKER JOB / REQUEST CARDS
+   ========================================================= */
+
+.worker-portal .request-card {
+    position: relative;
+}
+
+.worker-portal .request-card h3 {
+    color: var(--dark);
+}
+
+.worker-portal .request-card .status {
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   WORKER EARNINGS
+   ========================================================= */
+
+.worker-portal .earnings-card {
+    margin-bottom: 25px;
+}
+
+.worker-portal .earnings-card h2 {
+    margin-top: 0;
+}
+
+.worker-portal .earnings-card .amount {
+    color: var(--primary);
+    font-size: 34px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   WORKER PROFILE
+   ========================================================= */
+
+.worker-portal .worker-profile {
+    position: relative;
+}
+
+.worker-portal .worker-profile .profile-image {
+    margin-bottom: 15px;
+}
+
+.worker-portal .worker-profile h2 {
+    color: var(--dark);
+}
+
+.worker-portal .worker-profile .worker-status {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   WORKER PROFILE ACTIONS
+   ========================================================= */
+
+.worker-portal .profile-actions {
+    margin-top: 20px;
+}
+
+.worker-portal .profile-actions a {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   WORKER JOB STATUS
+   ========================================================= */
+
+.worker-portal .status.accepted {
+    background: var(--success-bg);
+}
+
+.worker-portal .status.pending {
+    background: var(--warning-bg);
+}
+
+.worker-portal .status.rejected,
+.worker-portal .status.cancelled {
+    background: var(--danger-bg);
+}
+
+
+/* =========================================================
+   WORKER SERVICES
+   ========================================================= */
+
+.worker-portal .worker-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.worker-portal .worker-service-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 22px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.worker-portal .worker-service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================================
+   WORKER AVAILABILITY
+   ========================================================= */
+
+.worker-portal .availability-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.worker-portal .availability-status {
+    display: inline-block;
+    padding: 7px 12px;
+    background: var(--success-bg);
+    color: var(--success);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   WORKER MESSAGES
+   ========================================================= */
+
+.worker-portal .messages-container {
+    min-height: 500px;
+}
+
+
+/* =========================================================
+   WORKER RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .worker-portal .worker-services {
+        grid-template-columns: 1fr;
+    }
+
+    .worker-portal .profile-actions {
+        flex-direction: column;
+    }
+
+    .worker-portal .profile-actions a {
+        width: 100%;
+        text-align: center;
+    }
+}

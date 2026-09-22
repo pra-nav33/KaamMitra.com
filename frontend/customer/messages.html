@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Messages - KaamMitra.com</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/customer.css">
+
+</head>
+
+
+body>
+
+
+    <!-- ==================================================
+         CUSTOMER PORTAL LAYOUT
+         ================================================== -->
+
+    <div class="portal-layout">
+
+
+        <!-- ==================================================
+             SIDEBAR
+             ================================================== -->
+
+        <aside class="portal-sidebar">
+
+            
+           <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+            <div class="portal-title">
+                CUSTOMER PORTAL
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="search.html">
+                    🔍 Find Workers
+                </a>
+
+                <a href="bookings.html">
+                    📅 My Bookings
+                </a>
+
+                <a href="request-service.html">
+                    📝 Request Service
+                </a>
+
+                <a href="saved-workers.html">
+                    ⭐ Saved Workers
+                </a>
+
+                <a href="messages.html" class="active">
+                    💬 Messages
+                </a>
+
+                <a href="notifications.html">
+                    🔔 Notifications
+                </a>
+
+                <a href="payment.html">
+                    💳 Payments
+                </a>
+
+                <a href="review.html">
+                    ⭐ Reviews
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="settings.html">
+                    ⚙️ Settings
+                </a>
+
+                <a href="../index.html">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             MAIN PORTAL AREA
+             ================================================== -->
+
+        <main class="portal-main">
+
+
+            <!-- ==================================================
+                 PAGE HEADER
+                 ================================================== -->
+
+            <section class="messages-header">
+
+                <h1>
+                    Messages
+                </h1>
+
+                <p>
+                    Communicate with your service workers.
+                </p>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 MESSAGES CONTAINER
+                 ================================================== -->
+
+            <section class="messages-container">
+
+
+                <!-- ==================================================
+                     CONVERSATION LIST
+                     ================================================== -->
+
+                <aside class="conversation-list">
+
+                    <h2>
+                        Conversations
+                    </h2>
+
+
+                    <!-- Conversation 1 -->
+
+                    <div class="conversation"
+                         data-worker="ram">
+
+                        <h3>
+                            Ram Sharma
+                        </h3>
+
+                        <p>
+                            Electrical Service
+                        </p>
+
+                    </div>
+
+
+                    <!-- Conversation 2 -->
+
+                    <div class="conversation"
+                         data-worker="sita">
+
+                        <h3>
+                            Sita Thapa
+                        </h3>
+
+                        <p>
+                            House Cleaning
+                        </p>
+
+                    </div>
+
+
+                    <!-- Conversation 3 -->
+
+                    <div class="conversation"
+                         data-worker="hari">
+
+                        <h3>
+                            Hari Karki
+                        </h3>
+
+                        <p>
+                            Computer Repair
+                        </p>
+
+                    </div>
+
+                </aside>
+
+
+
+                <!-- ==================================================
+                     CHAT AREA
+                     ================================================== -->
+
+                <section class="chat-area">
+
+
+                    <!-- Chat Header -->
+
+                    <div class="chat-header">
+
+                        <h2 id="workerName">
+                            Ram Sharma
+                        </h2>
+
+                        <p id="workerService">
+                            Electrical Service
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         MESSAGES
+                         ================================================== -->
+
+                    <div class="chat-messages"
+                         id="chatMessages">
+
+
+                        <div class="message worker-message">
+
+                            <p>
+                                Hello! How can I help you?
+                            </p>
+
+                        </div>
+
+
+                        <div class="message customer-message">
+
+                            <p>
+                                I need help with electrical wiring.
+                            </p>
+
+                        </div>
+
+
+                        <div class="message worker-message">
+
+                            <p>
+                                Sure. I can visit your location tomorrow.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         MESSAGE INPUT
+                         ================================================== -->
+
+                    <div class="message-input">
+
+                        <input
+                            type="text"
+                            id="messageInput"
+                            placeholder="Type your message..."
+                        >
+
+
+                        <button
+                            type="button"
+                            id="sendMessageBtn">
+
+                            Send
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 KaamMitra.com. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         EXTERNAL JAVASCRIPT
+         ================================================== -->
+
+    <script src="../assets/js/customer.js"></script>
+
+
+</body>
+
+</html>

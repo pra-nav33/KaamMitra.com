@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Worker Dashboard - KaamMitra.com</title>
+
+<link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/worker.css">
+</head>
+<body >
+<div class="portal-layout">
+    <!-- ================================
+         SIDEBAR
+         ================================ -->
+    <aside class="portal-sidebar">
+
+       <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+        <p class="portal-title">
+            WORKER PORTAL
+        </p>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="active">
+                🏠 Dashboard
+            </a>
+            <a href="requests.html">
+                📋 Job Requests
+            </a>
+            <a href="jobs.html">
+                🔧 My Jobs
+            </a>
+            <a href="earnings.html">
+                💰 Earnings
+            </a>
+            <a href="messages.html">
+                💬 Messages
+            </a>
+            <a href="notifications.html">
+                🔔 Notifications
+            </a>
+            <a href="profile.html">
+                👤 Profile
+            </a>
+            <a href="settings.html">
+    ⚙️ Settings
+</a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+    <!-- ================================
+         MAIN AREA
+         ================================ -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <div>
+
+                <h1>
+                    Good Morning, Ram Thapa 👋
+                </h1>
+
+                <p>
+                    Here's your work overview.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================
+             SUMMARY CARDS
+             ================================ -->
+
+        <section class="summary-container">
+
+
+            <!-- NEW REQUESTS -->
+
+            <div class="summary-card">
+
+                <h3>
+                    New Job Requests
+                </h3>
+
+                <p id="dashboardPendingRequests">
+                    3
+                </p>
+
+                <span>
+                    Pending requests
+                </span>
+
+                <a href="requests.html">
+                    View Requests
+                </a>
+
+            </div>
+
+
+
+            <!-- ACTIVE JOBS -->
+
+            <div class="summary-card">
+
+                <h3>
+                    Active Jobs
+                </h3>
+
+                <p id="dashboardActiveJobs">
+                    2
+                </p>
+
+                <span>
+                    Accepted or in progress
+                </span>
+
+                <a href="jobs.html">
+                    View Jobs
+                </a>
+
+            </div>
+
+
+
+            <!-- COMPLETED -->
+
+            <div class="summary-card">
+
+                <h3>
+                    Completed Jobs
+                </h3>
+
+                <p id="dashboardCompletedJobs">
+                    2
+                </p>
+
+                <span>
+                    Total completed
+                </span>
+
+                <a href="jobs.html">
+                    View History
+                </a>
+
+            </div>
+
+
+
+            <!-- EARNINGS -->
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Earnings
+                </h3>
+
+                <p id="dashboardEarnings">
+                    Rs. 1,300
+                </p>
+
+                <span>
+                    Paid earnings
+                </span>
+
+                <a href="earnings.html">
+                    View Earnings
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================================
+             NEW JOB REQUESTS
+             ================================ -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    New Job Requests
+                </h2>
+
+                <a href="requests.html">
+                    View All
+                </a>
+
+            </div>
+
+
+
+            <!-- REQUEST 1 -->
+
+            <div
+                class="request-card dashboard-request-card"
+                data-request="request1">
+
+
+                <h3>
+                    🔧 Plumbing - Pipe Leakage
+                </h3>
+
+
+                <p>
+                    <strong>Customer:</strong>
+                    Pranav
+                </p>
+
+
+                <p>
+                    📍 Kathmandu, Nepal
+                </p>
+
+
+                <p>
+                    📅 22 May 2024 - 10:00 AM
+                </p>
+
+
+                <p>
+                    💰 Budget: Rs. 800
+                </p>
+
+
+                <p class="request-status">
+                    Pending
+                </p>
+
+
+                <div class="card-actions">
+
+
+                    <a href="job-details.html?job=job1">
+                        View Details
+                    </a>
+
+
+                    <button
+                        type="button"
+                        class="accept-request"
+                        data-request="request1">
+
+                        Accept
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="reject-request"
+                        data-request="request1">
+
+                        Reject
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- REQUEST 2 -->
+
+            <div
+                class="request-card dashboard-request-card"
+                data-request="request2">
+
+
+                <h3>
+                    🚿 Tap Installation
+                </h3>
+
+
+                <p>
+                    <strong>Customer:</strong>
+                    Sita
+                </p>
+
+
+                <p>
+                    📍 Lalitpur, Nepal
+                </p>
+
+
+                <p>
+                    📅 23 May 2024 - 2:00 PM
+                </p>
+
+
+                <p>
+                    💰 Budget: Rs. 600
+                </p>
+
+
+                <p class="request-status">
+                    Pending
+                </p>
+
+
+                <div class="card-actions">
+
+
+                    <a href="job-details.html?job=job2">
+                        View Details
+                    </a>
+
+
+                    <button
+                        type="button"
+                        class="accept-request"
+                        data-request="request2">
+
+                        Accept
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="reject-request"
+                        data-request="request2">
+
+                        Reject
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- REQUEST 3 -->
+
+            <div
+                class="request-card dashboard-request-card"
+                data-request="request3">
+
+
+                <h3>
+                    🚿 Bathroom Plumbing
+                </h3>
+
+
+                <p>
+                    <strong>Customer:</strong>
+                    Bikram
+                </p>
+
+
+                <p>
+                    📍 Bhaktapur, Nepal
+                </p>
+
+
+                <p>
+                    📅 24 May 2024 - 11:00 AM
+                </p>
+
+
+                <p>
+                    💰 Budget: Rs. 1,200
+                </p>
+
+
+                <p class="request-status">
+                    Pending
+                </p>
+
+
+                <div class="card-actions">
+
+
+                    <a href="requests.html">
+                        View Details
+                    </a>
+
+
+                    <button
+                        type="button"
+                        class="accept-request"
+                        data-request="request3">
+
+                        Accept
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="reject-request"
+                        data-request="request3">
+
+                        Reject
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================================
+             ACTIVE / UPCOMING JOBS
+             ================================ -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    My Jobs
+                </h2>
+
+                <a href="jobs.html">
+                    View All
+                </a>
+
+            </div>
+
+
+
+            <!-- JOB 1 -->
+
+            <div
+                class="booking-card dashboard-job-card"
+                data-job="job1">
+
+
+                <h3>
+                    🔧 Plumbing - Pipe Leakage
+                </h3>
+
+
+                <p>
+                    <strong>Customer:</strong>
+                    Pranav
+                </p>
+
+
+                <p>
+                    📍 Kathmandu, Nepal
+                </p>
+
+
+                <p>
+                    📅 22 May 2024 - 10:00 AM
+                </p>
+
+
+                <p>
+                    💰 Rs. 800
+                </p>
+
+
+                <span class="status accepted job-status">
+                    Accepted
+                </span>
+
+
+                <div class="card-actions">
+
+                    <a href="job-details.html?job=job1">
+                        View Job
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- JOB 2 -->
+
+            <div
+                class="booking-card dashboard-job-card"
+                data-job="job2">
+
+
+                <h3>
+                    🚿 Tap Installation
+                </h3>
+
+
+                <p>
+                    <strong>Customer:</strong>
+                    Sita
+                </p>
+
+
+                <p>
+                    📍 Lalitpur, Nepal
+                </p>
+
+
+                <p>
+                    📅 23 May 2024 - 2:00 PM
+                </p>
+
+
+                <p>
+                    💰 Rs. 600
+                </p>
+
+
+                <span class="status upcoming job-status">
+                    Upcoming
+                </span>
+
+
+                <div class="card-actions">
+
+                    <a href="job-details.html?job=job2">
+                        View Job
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="../assets/js/worker.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payments - KaamMitra.com</title>
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/customer.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         CUSTOMER PORTAL
+         ================================================== -->
+
+    <div class="portal-layout">
+
+
+        <!-- ==================================================
+             SIDEBAR
+             ================================================== -->
+
+        <aside class="portal-sidebar">
+
+           <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+            <p class="portal-title">
+                CUSTOMER PORTAL
+            </p>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="search.html">
+                    🔍 Find Workers
+                </a>
+
+                <a href="bookings.html">
+                    📅 My Bookings
+                </a>
+
+                <a href="request-service.html">
+                    📝 Request Service
+                </a>
+
+                <a href="saved-workers.html">
+                    ⭐ Saved Workers
+                </a>
+
+                <a href="messages.html">
+                    💬 Messages
+                </a>
+
+                <a href="notifications.html">
+                    🔔 Notifications
+                </a>
+
+                <a href="payment.html" class="active">
+                    💳 Payments
+                </a>
+
+                <a href="review.html">
+                    ⭐ Reviews
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="settings.html">
+                    ⚙️ Settings
+                </a>
+
+                <a href="../index.html">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             MAIN CONTENT
+             ================================================== -->
+
+        <main class="portal-main">
+
+
+            <!-- ==================================================
+                 PAGE HEADER
+                 ================================================== -->
+
+            <section class="portal-header">
+
+                <h1>
+                    Payments
+                </h1>
+
+                <p>
+                    Manage your service payments and payment history.
+                </p>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PENDING PAYMENT
+                 ================================================== -->
+
+            <section>
+
+                <h2>
+                    Pending Payment
+                </h2>
+
+
+                <div class="booking-card">
+
+                    <h3>
+                        🔧 Plumbing Service
+                    </h3>
+
+                    <p>
+                        <strong>Worker:</strong> Ram Thapa
+                    </p>
+
+                    <p>
+                        <strong>Booking ID:</strong> KM001
+                    </p>
+
+                    <p>
+                        <strong>Service Date:</strong> 25 August 2026
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong> Kathmandu
+                    </p>
+
+                    <p>
+                        <strong>Service Amount:</strong> Rs. 1,500
+                    </p>
+
+                    <p>
+                        <strong>Payment Status:</strong>
+
+                        <span class="status upcoming">
+                            Pending
+                        </span>
+
+                    </p>
+
+
+                    <a href="#payment-form">
+                        Make Payment
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PAYMENT FORM
+                 ================================================== -->
+
+            <section id="payment-form">
+
+                <h2>
+                    Make Payment
+                </h2>
+
+
+                <div class="booking-card">
+
+                    <form id="paymentForm">
+
+
+                        <!-- Payment Method -->
+
+                        <div class="search-field">
+
+                            <label for="paymentMethod">
+                                Payment Method
+                            </label>
+
+                            <select
+                                id="paymentMethod"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Payment Method
+                                </option>
+
+                                <option value="cash">
+                                    Cash on Service
+                                </option>
+
+                                <option value="esewa">
+                                    eSewa
+                                </option>
+
+                                <option value="khalti">
+                                    Khalti
+                                </option>
+
+                                <option value="card">
+                                    Debit / Credit Card
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Amount -->
+
+                        <div class="search-field">
+
+                            <label for="paymentAmount">
+                                Amount
+                            </label>
+
+                            <input
+                                type="text"
+                                id="paymentAmount"
+                                value="Rs. 1,500"
+                                readonly
+                            >
+
+                        </div>
+
+
+
+                        <!-- Pay Button -->
+
+                        <button
+                            type="submit"
+                            class="payment-button"
+                        >
+                            Pay Rs. 1,500
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PAYMENT HISTORY
+                 ================================================== -->
+
+            <section>
+
+                <h2>
+                    Payment History
+                </h2>
+
+
+                <div class="booking-card">
+
+                    <h3>
+                        ⚡ Electrical Repair
+                    </h3>
+
+                    <p>
+                        <strong>Worker:</strong> Suresh Kumar
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 15 August 2026
+                    </p>
+
+                    <p>
+                        <strong>Amount:</strong> Rs. 1,200
+                    </p>
+
+                    <p>
+                        <strong>Payment Method:</strong> eSewa
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+
+                        <span class="status accepted">
+                            Paid
+                        </span>
+
+                    </p>
+
+                </div>
+
+
+                <div class="booking-card">
+
+                    <h3>
+                        💻 Computer Repair
+                    </h3>
+
+                    <p>
+                        <strong>Worker:</strong> Hari Karki
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 10 August 2026
+                    </p>
+
+                    <p>
+                        <strong>Amount:</strong> Rs. 800
+                    </p>
+
+                    <p>
+                        <strong>Payment Method:</strong> Khalti
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+
+                        <span class="status accepted">
+                            Paid
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 KaamMitra.com. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         CUSTOMER JAVASCRIPT
+         ================================================== -->
+
+    <script src="../assets/js/customer.js"></script>
+
+
+</body>
+
+</html>

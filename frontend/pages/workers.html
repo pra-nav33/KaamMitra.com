@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Workers - KaamMitra.com</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+       <link rel="stylesheet" href="../assets/css/worker.css">
+    
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         NAVBAR
+         ================================================== -->
+
+    <header>
+
+        <nav>
+
+           <div class="home-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="workers.html" class="nav-active">
+                        Find Workers
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#how-it-works">
+                        How It Works
+                    </a>
+                </li>
+                 <li><a href="../index.html#contact">Contact</a></li>
+
+            </ul>
+
+
+            <div class="nav-buttons">
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+         ================================================== -->
+
+    <main class="marketplace-main">
+
+
+        <!-- ==================================================
+             WORKERS HERO
+             ================================================== -->
+
+        <section class="workers-hero">
+
+            <div class="workers-hero-content">
+
+                <span class="hero-label">
+                    KAAMMITRA WORKERS
+                </span>
+
+                <h1>
+                    Find Trusted Workers<br>
+                    Near You
+                </h1>
+
+                <p>
+                    Search skilled professionals by service,
+                    location, rating and availability.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SEARCH PANEL
+             ================================================== -->
+
+        <section class="modern-worker-search">
+
+            <div class="search-panel-heading">
+
+                <span>
+                    FIND YOUR PROFESSIONAL
+                </span>
+
+                <h2>
+                    What do you need help with?
+                </h2>
+
+            </div>
+
+
+            <div class="modern-search-grid">
+
+
+                <!-- SERVICE -->
+
+                <div class="modern-search-field">
+
+                    <label for="service">
+                        Service
+                    </label>
+
+                    <div class="input-with-icon">
+
+                        <span>
+                            🔧
+                        </span>
+
+                        <input
+                            type="text"
+                            id="service"
+                            placeholder="e.g. Plumber, Electrician"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LOCATION -->
+
+                <div class="modern-search-field">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <div class="input-with-icon">
+
+                        <span>
+                            📍
+                        </span>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="e.g. Kathmandu"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CATEGORY -->
+
+                <div class="modern-search-field">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category">
+
+                        <option value="">
+                            All Categories
+                        </option>
+
+                        <option value="household">
+                            Household Services
+                        </option>
+
+                        <option value="appliance">
+                            Appliance & Electronics Repair
+                        </option>
+
+                        <option value="electrical">
+                            Electrical Services
+                        </option>
+
+                        <option value="plumbing">
+                            Plumbing & Water Services
+                        </option>
+
+                        <option value="it">
+                            IT & Technical Services
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- SEARCH BUTTON -->
+
+                <div class="modern-search-button">
+
+                    <button
+                        type="button"
+                        id="searchWorkersBtn">
+
+                        🔍 Search Workers
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             FILTERS
+             ================================================== -->
+
+        <section class="modern-filter-section">
+
+            <div class="filter-heading">
+
+                <div>
+
+                    <span>
+                        REFINE RESULTS
+                    </span>
+
+                    <h2>
+                        Filter Workers
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="modern-filters">
+
+
+                <!-- RATING -->
+
+                <div class="modern-filter">
+
+                    <label for="rating">
+                        ⭐ Minimum Rating
+                    </label>
+
+                    <select id="rating">
+
+                        <option value="">
+                            Any Rating
+                        </option>
+
+                        <option value="4">
+                            4+ Stars
+                        </option>
+
+                        <option value="4.5">
+                            4.5+ Stars
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- PRICE -->
+
+                <div class="modern-filter">
+
+                    <label for="price">
+                        💰 Price Range
+                    </label>
+
+                    <select id="price">
+
+                        <option value="">
+                            Any Price
+                        </option>
+
+                        <option value="low">
+                            Low
+                        </option>
+
+                        <option value="medium">
+                            Medium
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- AVAILABILITY -->
+
+                <div class="modern-filter">
+
+                    <label for="availability">
+                        🟢 Availability
+                    </label>
+
+                    <select id="availability">
+
+                        <option value="">
+                            Any Availability
+                        </option>
+
+                        <option value="available">
+                            Available Now
+                        </option>
+
+                        <option value="today">
+                            Available Today
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- VERIFICATION -->
+
+                <div class="modern-filter">
+
+                    <label for="verification">
+                        ✓ Verification
+                    </label>
+
+                    <select id="verification">
+
+                        <option value="">
+                            All Workers
+                        </option>
+
+                        <option value="verified">
+                            Verified Workers
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             WORKER RESULTS
+             ================================================== -->
+
+        <section class="modern-worker-results">
+
+
+            <div class="worker-results-heading">
+
+                <div>
+
+                    <span>
+                        PROFESSIONALS
+                    </span>
+
+                    <h2>
+                        Available Workers
+                    </h2>
+
+                </div>
+
+                <p>
+                    Skilled professionals ready to help
+                </p>
+
+            </div>
+
+
+
+            <div class="modern-worker-grid">
+
+
+                <!-- ==================================================
+                     WORKER 1
+                     ================================================== -->
+
+                <div
+                    class="worker-card modern-worker-card"
+                    data-service="plumber"
+                    data-location="kathmandu"
+                    data-category="plumbing"
+                    data-rating="4.8"
+                    data-price="low"
+                    data-availability="available"
+                    data-verification="verified">
+
+
+                    <div class="modern-worker-image">
+
+                        <img
+                            src="../assets/images/profile.png"
+                            alt="Ram Thapa - Plumber"
+                        >
+
+                        <span class="verified-badge">
+                            ✓ Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="worker-info modern-worker-info">
+
+                        <div class="worker-name-row">
+
+                            <h3>
+                                Ram Thapa
+                            </h3>
+
+                            <span class="online-dot">
+                                ●
+                            </span>
+
+                        </div>
+
+
+                        <p class="worker-profession">
+                            🔧 Professional Plumber
+                        </p>
+
+
+                        <div class="worker-rating">
+
+                            <strong>
+                                ⭐ 4.8
+                            </strong>
+
+                            <span>
+                                (120 Reviews)
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            📍 Kathmandu
+                        </p>
+
+                        <p class="worker-price">
+                            Starting from <strong>Rs. 500</strong>
+                        </p>
+
+
+                        <div class="worker-availability">
+                            Available Now
+                        </div>
+
+
+                        <div class="worker-buttons modern-worker-buttons">
+
+                            <a href="worker-profile.html?worker=ram">
+                                View Profile
+                            </a>
+
+                            <a href="login.html">
+                                Hire Worker
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     WORKER 2
+                     ================================================== -->
+
+                <div
+                    class="worker-card modern-worker-card"
+                    data-service="electrician"
+                    data-location="lalitpur"
+                    data-category="electrical"
+                    data-rating="4.7"
+                    data-price="medium"
+                    data-availability="available"
+                    data-verification="verified">
+
+
+                    <div class="modern-worker-image">
+
+                        <img
+                            src="../assets/images/profile.png"
+                            alt="Suresh Kumar - Electrician"
+                        >
+
+                        <span class="verified-badge">
+                            ✓ Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="worker-info modern-worker-info">
+
+                        <div class="worker-name-row">
+
+                            <h3>
+                                Suresh Kumar
+                            </h3>
+
+                            <span class="online-dot">
+                                ●
+                            </span>
+
+                        </div>
+
+
+                        <p class="worker-profession">
+                            ⚡ Professional Electrician
+                        </p>
+
+
+                        <div class="worker-rating">
+
+                            <strong>
+                                ⭐ 4.7
+                            </strong>
+
+                            <span>
+                                (98 Reviews)
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            📍 Lalitpur
+                        </p>
+
+                        <p class="worker-price">
+                            Starting from <strong>Rs. 600</strong>
+                        </p>
+
+
+                        <div class="worker-availability">
+                            Available Now
+                        </div>
+
+
+                        <div class="worker-buttons modern-worker-buttons">
+
+                            <a href="worker-profile.html?worker=suresh">
+                                View Profile
+                            </a>
+
+                            <a href="login.html">
+                                Hire Worker
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     WORKER 3
+                     ================================================== -->
+
+                <div
+                    class="worker-card modern-worker-card"
+                    data-service="it technician"
+                    data-location="bhaktapur"
+                    data-category="it"
+                    data-rating="4.9"
+                    data-price="high"
+                    data-availability="available"
+                    data-verification="verified">
+
+
+                    <div class="modern-worker-image">
+
+                        <img
+                            src="../assets/images/profile.png"
+                            alt="Hari Sharma - IT Technician"
+                        >
+
+                        <span class="verified-badge">
+                            ✓ Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="worker-info modern-worker-info">
+
+                        <div class="worker-name-row">
+
+                            <h3>
+                                Hari Sharma
+                            </h3>
+
+                            <span class="online-dot">
+                                ●
+                            </span>
+
+                        </div>
+
+
+                        <p class="worker-profession">
+                            💻 IT & Technical Support
+                        </p>
+
+
+                        <div class="worker-rating">
+
+                            <strong>
+                                ⭐ 4.9
+                            </strong>
+
+                            <span>
+                                (150 Reviews)
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            📍 Bhaktapur
+                        </p>
+
+                        <p class="worker-price">
+                            Starting from <strong>Rs. 800</strong>
+                        </p>
+
+
+                        <div class="worker-availability">
+                            Available Now
+                        </div>
+
+
+                        <div class="worker-buttons modern-worker-buttons">
+
+                            <a href="worker-profile.html?worker=hari">
+                                View Profile
+                            </a>
+
+                            <a href="login.html">
+                                Hire Worker
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- No workers message -->
+
+            <div id="noWorkers" class="modern-no-workers">
+
+                <div>
+                    🔍
+                </div>
+
+                <h3>
+                    No workers found
+                </h3>
+
+                <p>
+                    Try changing your search or filter options.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             CTA
+             ================================================== -->
+
+        <section class="worker-marketplace-cta">
+
+            <div>
+
+                <span>
+                    ARE YOU A SKILLED PROFESSIONAL?
+                </span>
+
+                <h2>
+                    Turn your skills into opportunities.
+                </h2>
+
+                <p>
+                    Join KaamMitra and connect with customers
+                    looking for your services.
+                </p>
+
+            </div>
+
+
+            <a href="register.html">
+                Become a Worker →
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+
+                <h3>
+                    KaamMitra
+                </h3>
+
+                <p>
+                    Connecting customers with skilled workers
+                    for everyday services.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="workers.html">
+                    Find Workers
+                </a>
+
+                <a href="../index.html#how-it-works">
+                    How It Works
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 KaamMitra.com. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Existing Workers JavaScript -->
+
+    <script src="../assets/js/workers.js"></script>
+
+
+</body>
+
+</html>

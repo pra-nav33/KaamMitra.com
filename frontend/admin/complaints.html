@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Complaints - KaamMitra.com</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- ==================================================
+         SIDEBAR
+         ================================================== -->
+
+    <aside class="portal-sidebar">
+
+     <div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                🔧 Workers
+            </a>
+
+            <a href="services.html">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html" class="active">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+             <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ==================================================
+         MAIN
+         ================================================== -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Complaints & Disputes
+            </h1>
+
+            <p>
+                Review and manage customer and worker complaints.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             COMPLAINT LIST
+             ================================================== -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    Complaints
+                </h2>
+
+                <span id="complaintCount">
+                    3 Complaints
+                </span>
+
+            </div>
+
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="complaintSearch"
+                    placeholder="Search by customer, worker or complaint..."
+                >
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 COMPLAINT 001
+                 ================================================== -->
+
+            <div
+                class="booking-card admin-complaint-card"
+                data-id="001"
+                data-customer="Customer One"
+                data-worker="Ram Thapa"
+                data-status="open"
+                data-issue="Service was delayed"
+            >
+
+                <h3>
+                    Complaint #001
+                </h3>
+
+                <p>
+                    Customer: Customer One
+                </p>
+
+                <p>
+                    Worker: Ram Thapa
+                </p>
+
+                <p>
+                    Issue: Service was delayed.
+                </p>
+
+                <p>
+                    📅 August 27, 2026
+                </p>
+
+                <span class="status upcoming complaint-status">
+                    Under Review
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        type="button"
+                        class="review-complaint-btn"
+                    >
+                        Review Complaint
+                    </button>
+
+                    <button
+                        type="button"
+                        class="resolve-complaint-btn"
+                    >
+                        Resolve
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 COMPLAINT 002
+                 ================================================== -->
+
+            <div
+                class="booking-card admin-complaint-card"
+                data-id="002"
+                data-customer="Customer Two"
+                data-worker="Suresh Kumar"
+                data-status="open"
+                data-issue="Disagreement about service price"
+            >
+
+                <h3>
+                    Complaint #002
+                </h3>
+
+                <p>
+                    Customer: Customer Two
+                </p>
+
+                <p>
+                    Worker: Suresh Kumar
+                </p>
+
+                <p>
+                    Issue: Disagreement about service price.
+                </p>
+
+                <p>
+                    📅 August 26, 2026
+                </p>
+
+                <span class="status upcoming complaint-status">
+                    Under Review
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        type="button"
+                        class="review-complaint-btn"
+                    >
+                        Review Complaint
+                    </button>
+
+                    <button
+                        type="button"
+                        class="resolve-complaint-btn"
+                    >
+                        Resolve
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 COMPLAINT 003
+                 ================================================== -->
+
+            <div
+                class="booking-card admin-complaint-card"
+                data-id="003"
+                data-customer="Customer Three"
+                data-worker="Hari Sharma"
+                data-status="resolved"
+                data-issue="Service completed successfully"
+            >
+
+                <h3>
+                    Complaint #003
+                </h3>
+
+                <p>
+                    Customer: Customer Three
+                </p>
+
+                <p>
+                    Worker: Hari Sharma
+                </p>
+
+                <p>
+                    Issue: Service completed successfully.
+                </p>
+
+                <p>
+                    📅 August 24, 2026
+                </p>
+
+                <span class="status accepted complaint-status">
+                    Resolved
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        type="button"
+                        class="review-complaint-btn"
+                    >
+                        View Complaint
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

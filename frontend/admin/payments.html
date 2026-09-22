@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payments - KaamMitra.com</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+
+<body>
+
+
+<div class="portal-layout">
+
+
+    <!-- ==================================================
+         SIDEBAR
+         ================================================== -->
+
+    <aside class="portal-sidebar">
+<div class="portal-logo">
+    <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="KaamMitra">
+    </a>
+</div>
+
+
+        <p class="portal-title">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="users.html">
+                👥 Users
+            </a>
+
+            <a href="workers.html">
+                🔧 Workers
+            </a>
+
+            <a href="services.html">
+                🛠 Services
+            </a>
+
+            <a href="bookings.html">
+                📋 Bookings
+            </a>
+
+            <a href="payments.html" class="active">
+                💰 Payments
+            </a>
+
+            <a href="complaints.html">
+                ⚠ Complaints
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+            <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="../pages/login.html">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ==================================================
+         MAIN
+         ================================================== -->
+
+    <main class="portal-main">
+
+
+        <!-- HEADER -->
+
+        <section class="portal-header">
+
+            <h1>
+                Manage Payments
+            </h1>
+
+            <p>
+                Monitor platform payments and transactions.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             PAYMENT SUMMARY
+             ================================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Payment Summary
+                </h2>
+
+            </div>
+
+
+            <div class="summary-container">
+
+
+                <div class="summary-card">
+
+                    <h3>
+                        Total Payments
+                    </h3>
+
+                    <p id="totalPayments">
+                        Rs. 85,000
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>
+                        Completed Payments
+                    </h3>
+
+                    <p id="completedPayments">
+                        Rs. 72,000
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>
+                        Pending Payments
+                    </h3>
+
+                    <p id="pendingPayments">
+                        Rs. 13,000
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             TRANSACTIONS
+             ================================================== -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    Recent Transactions
+                </h2>
+
+                <span id="paymentCount">
+                    2 Transactions
+                </span>
+
+            </div>
+
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="paymentSearch"
+                    placeholder="Search by customer, worker or service..."
+                >
+
+            </div>
+
+
+
+            <!-- PAYMENT 1 -->
+
+            <div
+                class="booking-card admin-payment-card"
+                data-service="Plumbing Service"
+                data-customer="Customer One"
+                data-worker="Ram Thapa"
+                data-amount="1000"
+                data-status="paid"
+            >
+
+                <h3>
+                    🔧 Plumbing Service
+                </h3>
+
+                <p>
+                    Customer: Customer One
+                </p>
+
+                <p>
+                    Worker: Ram Thapa
+                </p>
+
+                <p>
+                    Amount: Rs. 1,000
+                </p>
+
+                <p>
+                    📅 August 28, 2026
+                </p>
+
+                <span class="status accepted payment-status">
+                    Paid
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        type="button"
+                        class="view-payment-btn"
+                    >
+                        View Payment
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PAYMENT 2 -->
+
+            <div
+                class="booking-card admin-payment-card"
+                data-service="Electrical Repair"
+                data-customer="Customer Two"
+                data-worker="Suresh Kumar"
+                data-amount="1500"
+                data-status="pending"
+            >
+
+                <h3>
+                    ⚡ Electrical Repair
+                </h3>
+
+                <p>
+                    Customer: Customer Two
+                </p>
+
+                <p>
+                    Worker: Suresh Kumar
+                </p>
+
+                <p>
+                    Amount: Rs. 1,500
+                </p>
+
+                <p>
+                    📅 August 29, 2026
+                </p>
+
+                <span class="status upcoming payment-status">
+                    Pending
+                </span>
+
+
+                <div class="card-actions">
+
+                    <button
+                        type="button"
+                        class="view-payment-btn"
+                    >
+                        View Payment
+                    </button>
+
+                    <button
+                        type="button"
+                        class="complete-payment-btn"
+                    >
+                        Mark as Paid
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 KaamMitra.com. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>
